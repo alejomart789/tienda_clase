@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de Gomas Mágicas - Los mejores productos del mes">
+    <title>Tienda de Gomas Mágicas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS y animaciones dentro del mismo archivo -->
+    <style>
+        /* Personalización de estilos */
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        header {
+            min-height: 70vh;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.9rem;
+        }
+
+        /* Animaciones de los iconos */
+        .btn-outline-primary i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn-outline-primary:hover i {
+            transform: rotate(20deg);
+        }
+
+        /* Animación suave de aparición */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gomas Mágicas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destacados">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Portada -->
+    <header class="bg-cover text-white text-center py-5" style="background-image: url('https://via.placeholder.com/1500x600');">
+        <div class="container fade-in">
+            <h1 class="display-4">Bienvenido a la Tienda de Gomas Mágicas</h1>
+            <p class="lead">Los productos más innovadores y sorprendentes en el mundo de las gomas</p>
+            <a href="#productos" class="btn btn-primary btn-lg mt-3">Explorar productos</a>
+        </div>
+    </header>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in">Nuestros Productos</h2>
+            <div class="row text-center">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Goma Mágica 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Goma Mágica 1</h5>
+                            <p class="card-text">Descripción breve del producto 1.</p>
+                            <p class="card-text text-primary fw-bold">$19.99</p>
+                            <a href="#" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Goma Mágica 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Goma Mágica 2</h5>
+                            <p class="card-text">Descripción breve del producto 2.</p>
+                            <p class="card-text text-primary fw-bold">$24.99</p>
+                            <a href="#" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Goma Mágica 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Goma Mágica 3</h5>
+                            <p class="card-text">Descripción breve del producto 3.</p>
+                            <p class="card-text text-primary fw-bold">$29.99</p>
+                            <a href="#" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Destacados -->
+    <section id="destacados" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in">Destacados del Mes</h2>
+            <div class="row text-center">
+                <!-- Producto destacado -->
+                <div class="col-md-12 fade-in">
+                    <div class="card mx-auto" style="max-width: 600px;">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Producto Destacado">
+                        <div class="card-body">
+                            <h5 class="card-title">Goma Mágica Destacada</h5>
+                            <p class="card-text">Este mes, la Goma Mágica más popular es un imprescindible para cualquier fanático de la creatividad.</p>
+                            <p class="card-text text-primary fw-bold">$34.99</p>
+                            <a href="#" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center fade-in">
+        <div class="container">
+            <p>&copy; 2024 Tienda de Gomas Mágicas | Todos los derechos reservados</p>
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y funciones integradas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animación de fade-in -->
+    <script>
+        // Al cargar la página, aplicamos la clase fade-in
+        window.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                }, index * 200); // Delay entre elementos
+            });
+        });
+    </script>
+</body>
+</html>
